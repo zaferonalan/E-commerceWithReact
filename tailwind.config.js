@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        headingFirst: "#010f1c",
+        headingSecondary: "#21d35"
+      },
+      container:{
+        center: true,
+        padding: "15px"
+      }
+    },
+    fontFamily:{
+      primary: "Poppins",
+      secondary: "Pacifico"
+    }
   },
   plugins: [],
 }
