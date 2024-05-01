@@ -1,4 +1,3 @@
-import React from 'react'
 import { AiOutlineUser } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
 
