@@ -1,4 +1,3 @@
-import React from 'react'
 import glaxyS24Plus from "../assets/galaxyS24+.png";
 import glaxyS24ultra from "../assets/galaxyS24ultra.png";
 import iphone13 from "../assets/iphone13.png";

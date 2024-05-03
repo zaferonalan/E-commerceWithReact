@@ -1,4 +1,3 @@
-import React from 'react'
 import banner2 from "../assets/banner2.jpg";
 
 const BannerContent = () => {

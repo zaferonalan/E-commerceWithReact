@@ -1,4 +1,3 @@
-import React from 'react'
 import { AiFillStar, AiOutlineStar, AiOutlineShoppingCart } from "react-icons/ai";
 
 interface propsType{
@@ -36,7 +35,7 @@ const ProductCard = ({ id, title, img, category, price }:propsType) => {
             </div>
         </div>
         <div className="flex w-full gap-x-3 justify-center rounded-lg items-center bg-sky-500 text-white mt-2 px-4 py-2 cursor-pointer hover:bg-sky-600">
-         <AiOutlineShoppingCart className='text-2xl'/>Add To Cart
+          <AiOutlineShoppingCart className='text-2xl'/>Add To Cart
         </div>
       </div>
     </div>
