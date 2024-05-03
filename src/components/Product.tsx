@@ -4,7 +4,6 @@ import glaxyS24ultra from "../assets/galaxyS24ultra.png";
 import iphone13 from "../assets/iphone13.png";
 import iphone14 from "../assets/iphone14.png";
 import iphone15 from "../assets/iphone15.png";
-import iphone15pro from "../assets/iphone15pro.png";
 import iphone15promax from "../assets/iphone15promax.png";
 import iphonese from "../assets/iphonese.png";
 import ProductCard from './ProductCard';
@@ -34,7 +33,7 @@ const Product = () => {
     },
     {
       id:3,
-      img: iphone15pro,
+      img: iphone15promax,
       title: "Iphone 15 Pro",
       category: "Mobil Phone",
       price: "84999" 
