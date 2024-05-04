@@ -1,14 +1,29 @@
 import { AiFillStar, AiOutlineStar, AiOutlineShoppingCart } from "react-icons/ai";
+import { useAppDispatch } from "../redux/hook";
+import { addToCart } from "../redux/slice/cartSlice";
 
 interface propsType{
-  id: number,
-  title: string,
-  img: string,
-  category: string,
-  price: string
+  id: number;
+  title: string;
+  img: string;
+  category: string;
+  price: string;
 }
 
 const ProductCard = ({ id, title, img, category, price }:propsType) => {
+  const dispatch = useAppDispatch()
+
+  const addProductToCard = () => {
+    const payload = {
+      id,
+      img,
+      title,
+      price: parseFloat(price),
+      quantity: 1
+    }
+    dispatch(addToCart(payload))
+  }
+
   return (
     <div className="border border-gray-200">
       <div className="text-center border-b border-gray-200">
@@ -34,9 +49,9 @@ const ProductCard = ({ id, title, img, category, price }:propsType) => {
               <h2 className="font-medium text-sky-500 text-xl">{price} TL</h2>
             </div>
         </div>
-        <div className="flex w-full gap-x-3 justify-center rounded-lg items-center bg-sky-500 text-white mt-2 px-4 py-2 cursor-pointer hover:bg-sky-600">
+        <button onClick={addProductToCard} className="flex w-full gap-x-3 justify-center rounded-lg items-center bg-sky-500 text-white mt-2 px-4 py-2 cursor-pointer hover:bg-sky-600">
           <AiOutlineShoppingCart className='text-2xl'/>Add To Cart
-        </div>
+        </button>
       </div>
     </div>
   )
